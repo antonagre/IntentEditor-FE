@@ -1,0 +1,48 @@
+<div class="card intent-card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-2">
+                <h5 style="color: dodgerblue">
+                    Intent name
+                </h5>
+            </div>
+            <div class="row">
+                <div class="col-10 ">
+                    <input type="text" class="form-control" [(ngModel)] ="intent.intentName" />
+                </div>
+
+                <div class="col-2" style="align-self: end">
+                    <button (click)="toggleResponse()" class="btn btn-primary">Expand</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-2">
+                <h5 style="color: dodgerblue">
+                    Input sentence
+                </h5>
+            </div>
+            <div class="col-10">
+                <input type="text" class="form-control" [(ngModel)] ="intent.inSent"/>
+            </div>
+        </div>
+        <br>
+        <div class="row card response-card" *ngIf="showResponses || globalShow">
+            <div class="col-2">
+                <h5 style="color: forestgreen">Success Response</h5>
+            </div>
+            <div>
+                <input type="text" class="form-control" [(ngModel)] ="intent.successResponse"/>
+            </div>
+            <br>
+            <div class="col-2">
+                <h5 style="color: red">Error Response</h5>
+            </div>
+            <div>
+                <input type="text" class="form-control" [(ngModel)] ="intent.errorResponse"/>
+            </div>
+        </div>
+    </div>
+</div>

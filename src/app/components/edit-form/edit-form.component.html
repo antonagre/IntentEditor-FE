@@ -1,0 +1,52 @@
+<hr>
+<label style="color: darkorange">EDITOR</label>
+<div class="row">
+  <button (click)="getIntent()" class="btn btn-primary">GET</button>
+  <button (click)="setIntent()" class="btn btn-primary">SET</button>
+  <button (click)="deleteIntent()" class="btn btn-danger">DELETE</button>
+</div>
+<br>
+<div>
+  <div class="row">
+    <div class="col-sm-2">
+      <label>NAME</label>
+    </div>
+    <div class="col-10">
+      <input type="text" class="form-control" [(ngModel)]="intentName" name="intent_name"/>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-2">
+      <label>INPUT TEXT</label>
+    </div>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="inSent" name="inp_text"/>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-2">
+      <label>SUCCESS RESPONSE</label>
+    </div>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="successResponse" name="succ_res"/>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-2">
+      <label>ERROR RESPONSE</label>
+    </div>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="errorResponse" name="err_res"/>
+    </div>
+  </div>
+</div>
+<label></label>
+<div class="" >
+    <button (click)="previous()" class="btn btn-primary">PREVIOUS</button>
+    {{this.index}}
+    <button (click)="next()" class="btn btn-primary">NEXT</button>
+</div>
+

@@ -1,0 +1,46 @@
+@import 'codemirror/lib/codemirror';
+@import 'codemirror/theme/midnight.css';
+
+.ngx-codemirror {
+  border: 4px solid #00FFFF;
+}
+
+label {
+  color: #d9a01a;
+  font-size: 17px;
+  font-weight: bold
+}
+
+h1 {
+  color: #00FFFF;
+}
+
+btn-primary {
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: lightgray;
+  font-size: 16px;
+}
+
+th {
+  color: red;
+  background-color: slategray;
+}
+
+td {
+  background-color: slategray;
+}
+
+body {
+  margin: 0;
+}
+
+.CodeMirror {
+  height: 50vh !important;
+}
+
+label {
+  color: firebrick;
+}

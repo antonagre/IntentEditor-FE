@@ -1,0 +1,13 @@
+.card {
+    border-radius: 0.5rem;
+}
+
+.intent-card {
+    border-width: 3px;
+    border-color: deepskyblue;
+}
+.response-card {
+    border-color: crimson;
+    border-style: dotted;
+    border-width: 4px;
+}

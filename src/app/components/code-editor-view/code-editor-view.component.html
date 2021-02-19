@@ -1,0 +1,19 @@
+<hr>
+<label style="color: darkorange">INTENT FUNCTION CODE</label><br>
+<div>
+    <button class="btn btn-primary" (click)="loadBasicCode()">LOAD BASIC FUNCTION</button>
+    <button class="btn btn-danger" (click)="resetCode()">RESET CODE</button>
+</div>
+<div>
+    <div class="ngx-codemirror">
+      <ngx-codemirror
+        [options]="options"
+        [ngModel]="code"
+        [disabled]="false"
+        [autoFocus]="true"
+        (ngModelChange)="handleChange($event)"
+      ></ngx-codemirror>
+    </div>
+  <br>
+
+</div>

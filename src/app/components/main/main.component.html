@@ -1,0 +1,29 @@
+<h1 style="color: darkorange">Aron Data Editor</h1>
+<div class="row container-button">
+  <div class="col-auto">
+    <button (click)="tableTrigger()" class="btn btn-primary">TABLE</button>
+  </div>
+
+  <div class="col-auto">
+    <button (click)="editTrigger()" class="btn btn-primary">EDIT</button>
+  </div>
+</div>
+<div class="row container-button">
+  <div class ="col-12 box" *ngIf="tableView===true">
+    <br>
+    <app-table-view></app-table-view>
+  </div>
+  <div class ="col-12 box" *ngIf="editView===true">
+    <br>
+    <div class="justify-content-start">
+      <div>
+        <app-edit-form [codeEditor]="codeEditor"></app-edit-form>
+      </div>
+      <div>
+        <app-code-editor-view #codeEditor></app-code-editor-view>
+      </div>
+    </div>
+  </div>
+</div>
+
+
